@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Cancel Booking</h1>
+  <div class="form-group">
+    <label for="bookingId">Booking ID:</label>
+    <input
+      type="text"
+      id="bookingId"
+      [(ngModel)]="bookingId"
+      class="form-control"
+      placeholder="Enter Booking ID"
+    />
+  </div>
+  <button (click)="cancelBooking()" class="btn btn-danger">Cancel Booking</button>
+  <p *ngIf="message" class="alert alert-info">{{ message }}</p>
+</div>
